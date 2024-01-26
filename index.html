@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Subraa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href= style.css>
+  <link rel="icon" href="favicon.png" type="image/png" sizes="32x32">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    
+    <script>
+      setTimeout(function() {
+        var preloader = document.querySelector('.pre-loader');
+        preloader.style.transition = 'opacity 1s, transform 1s';
+        preloader.style.opacity = '0';
+        preloader.style.transform = 'translateY(-100%)';
+        
+        setTimeout(function() {
+          preloader.style.display = 'none';
+          
+          setTimeout(function() {
+            var navbar = document.querySelector('.navbar');
+            navbar.classList.add('slide-in');
+            
+            
+            var bannerContent = document.querySelector('.banner-content');
+            bannerContent.classList.add('slide-in');
+            
+            window.location.href = '#home';
+          }, 0);
+        }, 10);
+      }, 4500);
+      
+      
+      
+      
+      
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+      
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+      
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      
+      window.addEventListener("scroll", reveal);
+      
+      
+      
+      
+      
+    
+    
+    
+    
+
+  </script>
+  
+  <div class='pre-loader'>
+   <svg id="svg" viewBox="0 0 350.8 94.9" xmlns="http://www.w3.org/2000/svg"><g id="svgGroup" stroke-linecap="round" fill-rule="evenodd"><path d="M 148.878 57.966 A 63.011 63.011 0 0 0 147.6 62.1 A 32.202 32.202 0 0 0 149.341 60.381 C 155.059 54.328 163.013 42.395 166.862 34.146 A 40.278 40.278 0 0 0 168.3 30.7 C 168.7 29.5 169.9 28.7 171.1 28.7 C 175.386 28.7 176.807 32.26 176.981 35.82 A 16.004 16.004 0 0 1 177 36.6 C 177 42.206 172.537 52.499 170.026 60.036 A 58.688 58.688 0 0 0 169 63.4 A 22.473 22.473 0 0 0 177.085 56.307 A 57.125 57.125 0 0 0 179.678 52.35 A 363.951 363.951 0 0 1 181.013 47.458 C 182.416 42.438 184.08 36.853 185.89 31.268 A 353.334 353.334 0 0 1 187 27.9 A 242.153 242.153 0 0 1 189.434 20.934 C 192.864 11.605 196.53 3.802 199.92 1.056 A 4.03 4.03 0 0 1 202.4 0 A 3.087 3.087 0 0 1 203.763 0.302 C 205.137 0.968 205.8 2.625 205.8 4.1 C 205.8 11.6 199.8 26.5 197.2 35.7 A 51.073 51.073 0 0 1 199.602 33.388 C 201.62 31.58 203.422 30.331 205.068 29.618 A 7.872 7.872 0 0 1 208.2 28.9 C 215 28.9 217.4 33.8 217.4 39.7 A 23.107 23.107 0 0 1 217.388 40.436 C 217.161 47.553 213.723 55.955 210.331 59.581 A 9.804 9.804 0 0 1 209.7 60.2 A 26.588 26.588 0 0 0 211.893 59.258 C 212.865 58.789 213.872 58.24 214.878 57.619 A 27.126 27.126 0 0 0 224.1 48.7 A 2.678 2.678 0 0 1 224.149 48.608 A 73.852 73.852 0 0 0 224.745 47.446 C 225.298 46.349 226.015 44.888 226.808 43.237 A 413.815 413.815 0 0 0 229 38.6 A 5.683 5.683 0 0 1 227.185 37.582 A 7.169 7.169 0 0 1 224.9 32 A 10.393 10.393 0 0 1 225.083 30.088 C 226.103 24.644 231.232 19.2 236.6 19.2 A 4.09 4.09 0 0 1 236.661 19.201 C 239.026 19.236 240.5 21.321 240.5 23.7 A 12.337 12.337 0 0 1 240.133 26.582 C 239.714 28.333 238.993 30.084 238.272 31.935 A 65.825 65.825 0 0 0 237.5 34 A 14.653 14.653 0 0 0 238.48 33.873 C 243.041 33.121 245.432 30.461 245.9 29.9 A 18.813 18.813 0 0 1 245.944 29.857 C 246.463 29.341 246.933 28.94 247.603 28.778 A 2.948 2.948 0 0 1 248.3 28.7 A 6.659 6.659 0 0 1 249.827 28.866 C 252.981 29.608 253.952 32.714 254.084 35.82 A 18.468 18.468 0 0 1 254.1 36.6 A 10.938 10.938 0 0 1 254.096 36.91 C 253.952 41.966 250.405 51.154 247.644 59.094 A 173.345 173.345 0 0 0 246.2 63.4 A 21.735 21.735 0 0 0 254.487 56.049 A 64.11 64.11 0 0 0 258.864 48.77 A 45.637 45.637 0 0 1 259.695 46.268 C 263.042 37.081 269.399 28.9 277.4 28.9 A 8.328 8.328 0 0 1 278.208 28.939 C 282.743 29.38 284.8 33.567 284.8 38.2 A 17.029 17.029 0 0 1 284.774 39.15 A 13.67 13.67 0 0 1 284.4 41.7 C 284.1 43.1 282.9 44.1 281.5 44.1 A 3.082 3.082 0 0 1 281.185 44.084 A 3.092 3.092 0 0 1 278.4 41.1 C 278.4 40.272 278.674 39.238 278.769 38.453 A 3.861 3.861 0 0 0 278.8 38 A 8.77 8.77 0 0 0 278.779 37.376 C 278.73 36.697 278.6 36.135 278.405 35.708 A 2.066 2.066 0 0 0 278 35.1 C 272 42.2 266.7 53.9 266.7 62.9 L 266.7 63.5 A 4.038 4.038 0 0 0 267.804 62.993 C 272.235 60.266 281.663 48.252 283.4 45.6 A 3.204 3.204 0 0 1 283.92 44.943 A 2.984 2.984 0 0 1 286 44.1 C 288.494 44.1 290.772 45.048 292.044 46.773 A 5.502 5.502 0 0 1 293.1 50.1 A 4.797 4.797 0 0 1 293.044 50.772 C 292.653 53.487 290.298 59.273 289.2 63.3 C 294.786 60.786 298.032 56.019 301.278 50.047 A 149.422 149.422 0 0 0 301.966 48.765 A 45.637 45.637 0 0 1 302.795 46.268 C 306.142 37.081 312.499 28.9 320.5 28.9 A 8.328 8.328 0 0 1 321.308 28.939 C 325.843 29.38 327.9 33.567 327.9 38.2 A 17.029 17.029 0 0 1 327.874 39.15 A 13.67 13.67 0 0 1 327.5 41.7 C 327.2 43.1 326 44.1 324.6 44.1 A 3.082 3.082 0 0 1 324.285 44.084 A 3.092 3.092 0 0 1 321.5 41.1 C 321.5 40.272 321.774 39.238 321.869 38.453 A 3.861 3.861 0 0 0 321.9 38 A 8.77 8.77 0 0 0 321.879 37.376 C 321.83 36.697 321.7 36.135 321.505 35.708 A 2.066 2.066 0 0 0 321.1 35.1 C 315.1 42.2 309.8 53.9 309.8 62.9 L 309.8 63.5 A 4.038 4.038 0 0 0 310.904 62.993 C 315.335 60.266 324.763 48.252 326.5 45.6 A 3.204 3.204 0 0 1 327.02 44.943 A 2.984 2.984 0 0 1 329.1 44.1 C 331.594 44.1 333.872 45.048 335.144 46.773 A 5.502 5.502 0 0 1 336.2 50.1 A 4.797 4.797 0 0 1 336.144 50.772 C 335.753 53.487 333.398 59.273 332.3 63.3 C 337.886 60.786 341.132 56.019 344.378 50.047 A 149.422 149.422 0 0 0 345.1 48.7 C 345.529 47.843 346.398 47.28 347.267 47.136 A 2.661 2.661 0 0 1 347.7 47.1 C 349.3 47.1 350.8 48.5 350.8 50.1 C 350.8 50.598 350.602 50.997 350.402 51.494 A 11.148 11.148 0 0 0 350.4 51.5 C 347.869 56.168 344.611 61.405 340.626 65.094 A 15.767 15.767 0 0 1 330 69.9 A 12.027 12.027 0 0 1 329.624 69.894 C 324.234 69.726 322.8 65.911 322.8 62 C 322.8 61.606 322.8 61.181 322.818 60.76 A 9.774 9.774 0 0 1 322.9 59.8 A 109.509 109.509 0 0 1 321.294 61.521 C 315.782 67.295 312.007 69.8 308.9 69.8 A 9.462 9.462 0 0 1 308.049 69.762 C 305.37 69.521 303.302 68.137 301.962 66.128 A 11.24 11.24 0 0 1 300.371 62.046 A 45.496 45.496 0 0 1 297.526 65.094 A 15.767 15.767 0 0 1 286.9 69.9 A 12.027 12.027 0 0 1 286.524 69.894 C 281.134 69.726 279.7 65.911 279.7 62 C 279.7 61.606 279.7 61.181 279.718 60.76 A 9.774 9.774 0 0 1 279.8 59.8 A 109.509 109.509 0 0 1 278.194 61.521 C 272.682 67.295 268.907 69.8 265.8 69.8 A 9.462 9.462 0 0 1 264.949 69.762 C 262.27 69.521 260.202 68.137 258.862 66.128 A 11.24 11.24 0 0 1 257.271 62.046 A 45.496 45.496 0 0 1 254.426 65.094 A 15.767 15.767 0 0 1 243.8 69.9 A 8.974 8.974 0 0 1 241.265 69.565 C 239.405 69.018 238.17 67.842 237.425 66.31 A 10.588 10.588 0 0 1 236.5 61.7 A 23.112 23.112 0 0 1 236.832 58.023 C 237.357 54.789 238.479 50.898 240.002 46.26 A 464.352 464.352 0 0 1 242.4 39.2 A 21.332 21.332 0 0 1 240.463 39.709 A 17.241 17.241 0 0 1 236.9 40.1 A 90.86 90.86 0 0 1 236.671 40.1 C 236.127 40.099 235.525 40.088 235 40 A 222.587 222.587 0 0 1 233.092 44.135 C 231.597 47.289 230.248 49.945 229.4 51.5 A 2.678 2.678 0 0 1 229.252 51.759 A 29.343 29.343 0 0 1 227.026 55.063 C 220.798 63.104 209.975 69.088 199.152 69.741 A 32.406 32.406 0 0 1 197.2 69.8 A 10.297 10.297 0 0 1 195.406 69.65 C 191.154 68.898 189.2 65.385 189.2 60.7 A 18.076 18.076 0 0 1 189.25 59.36 A 15.756 15.756 0 0 1 189.6 57 A 3.154 3.154 0 0 1 189.895 56.187 A 2.892 2.892 0 0 1 192.4 54.6 A 3.287 3.287 0 0 1 193.021 54.659 A 2.966 2.966 0 0 1 195.5 57.5 C 195.5 58.281 195.256 59.185 195.149 59.972 A 4.733 4.733 0 0 0 195.1 60.6 C 195.1 61.345 195.1 62.7 195.472 63.343 A 0.609 0.609 0 0 0 196 63.7 A 2.772 2.772 0 0 0 197.797 62.891 C 200.236 60.743 202.51 54.657 204.2 48.7 C 205.9 42.7 207.1 36.8 207.3 35.2 A 4.162 4.162 0 0 0 206.222 35.747 C 202.109 38.454 192.715 49.596 190.9 52.5 C 189.357 56.443 187.447 61.047 185.61 64.486 A 37.364 37.364 0 0 1 184.7 66.1 A 14.437 14.437 0 0 1 183.284 68.124 A 4.428 4.428 0 0 1 179.9 69.9 C 178.688 69.9 177.81 69.354 177.266 68.529 A 4.423 4.423 0 0 1 176.6 66.1 A 9.41 9.41 0 0 1 176.628 65.683 A 15.767 15.767 0 0 1 166.6 69.9 C 161.2 69.3 159.4 66.5 159.4 61.6 A 17.486 17.486 0 0 1 159.415 60.889 C 159.467 59.593 159.663 58.203 160 56.6 C 157.181 61.128 151.661 67.627 147.057 69.424 A 6.263 6.263 0 0 1 144.8 69.9 C 140.761 69.9 138.717 68.12 137.917 65.234 A 13.314 13.314 0 0 1 137.5 61.7 A 13.817 13.817 0 0 1 137.575 60.348 C 138.2 54.066 142.608 40.709 146.5 30.7 C 146.9 29.5 148 28.7 149.3 28.7 A 6.659 6.659 0 0 1 150.827 28.866 C 153.981 29.608 154.952 32.714 155.084 35.82 A 18.468 18.468 0 0 1 155.1 36.6 C 155.1 42.355 151.344 50.754 148.878 57.966 Z M 94.2 88.7 L 93.9 88.8 C 92.8 88.7 91.6 88.9 90.5 88.9 A 42.339 42.339 0 0 1 85.403 88.592 C 75.24 87.356 65.078 82.282 63.911 71.335 A 20.135 20.135 0 0 1 63.8 69.2 C 63.8 66.083 65.148 63.124 65.443 60.254 A 10.306 10.306 0 0 0 65.5 59.2 C 65.5 57.6 64.2 56.3 62.6 56.3 A 2.906 2.906 0 0 0 60.245 57.698 C 58.287 60.409 57.833 66.333 57.802 68.823 A 21.944 21.944 0 0 0 57.8 69.1 A 24.168 24.168 0 0 0 60.082 79.763 C 64.84 89.596 76.339 93.849 87.839 94.725 A 61.477 61.477 0 0 0 92.5 94.9 A 40.375 40.375 0 0 0 98.639 94.401 C 113.053 92.169 130.5 82.529 130.5 67.2 A 20.397 20.397 0 0 0 123.691 52.942 C 115.895 44.938 103.842 38.922 101.074 30.635 A 11.043 11.043 0 0 1 100.5 27.5 C 104.7 27.7 108.8 27.8 113 27.8 A 217.725 217.725 0 0 0 116.272 27.779 C 128.23 27.601 149 25.964 149 11.5 C 149 3.241 139.736 0.456 132.724 0.053 A 31.9 31.9 0 0 0 130.9 0 A 52.994 52.994 0 0 0 124.689 0.386 C 115.064 1.529 103.84 5.233 96.527 11.755 A 23.451 23.451 0 0 0 90 20.9 A 905.096 905.096 0 0 1 76.596 20.167 A 451.31 451.31 0 0 0 49.7 19.1 A 214.602 214.602 0 0 0 45.151 19.145 C 30.611 19.453 6.619 21.663 0.905 35.476 A 15.964 15.964 0 0 0 0.1 38 A 4.185 4.185 0 0 0 0.06 38.174 C 0.004 38.448 0 38.637 0 38.936 A 80.878 80.878 0 0 0 0 39 A 2.966 2.966 0 0 0 2.479 41.841 A 3.287 3.287 0 0 0 3.1 41.9 A 2.958 2.958 0 0 0 5.645 40.313 A 4.223 4.223 0 0 0 5.9 39.8 A 21.074 21.074 0 0 1 19.158 28.493 C 28.613 25.097 40.629 25.099 48.965 25.1 A 2828.778 2828.778 0 0 0 49.5 25.1 C 59.107 25.1 68.66 25.692 78.238 26.283 A 1262.179 1262.179 0 0 0 88.7 26.9 C 88.8 46.9 118.7 53.1 118.7 67.5 C 118.7 80.3 105.3 87.7 94.2 88.7 Z M 113.4 21.8 C 109.6 21.8 105.7 21.7 101.9 21.5 C 106.7 10.6 119.9 6 131 6 C 133.62 6 140.383 6.643 142.414 9.559 A 3.156 3.156 0 0 1 143 11.4 A 7.334 7.334 0 0 1 138.788 17.773 C 131.92 21.802 118.574 21.801 113.589 21.8 A 1398.749 1398.749 0 0 0 113.4 21.8 Z" vector-effect="non-scaling-stroke"/></g></svg>
+  </div>
+  
+    <section class="logo-section" id="myHeader">
+    <div class="container">
+      <header>
+        <nav class="navbar">
+            <a href="https://subraa.info/ysites/subraa/index.html" class="navbar__logo" title="Subraa"><img src="images/logo.png" alt=""></a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#feature">Features</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+              
+                
+            </ul>
+            <button class="navbar__toggler toggler-button">
+                <span></span>
+            </button>
+
+        </nav>
+     
+    </header>
+    </div>  
+ 
+    </section>
+
+  
+      <section class="banner-section" id="home">
+        <video autoplay muted loop>
+          <source src="bg-3.mp4" type="video/mp4">
+          <!-- Add additional source elements for different video formats if needed -->
+        </video>
+        <div class="fade-in">
+        <div class="container">
+          <div class="banner banner-content">
+            <h1 class="banner-h1"> THE BUSINESS OF TOMORROW</h1>
+            <h2 class="banner-h2">Be Future - Proof and <br>Future Ready</h2>
+            <button>
+  <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"></path></svg>
+  <span><a href="#contact">Jion Us</a></span>
+</button>
+<div class="container scroller">
+  <a href="#feature">
+  <div class="mouse_scroll">
+
+		<div class="mouse">
+			<div class="wheel"></div>
+		</div>
+		<div>
+			<span class="m_scroll_arrows unu"></span>
+			<span class="m_scroll_arrows doi"></span>
+			<span class="m_scroll_arrows trei"></span>
+		</div>
+</div>
+  </a>
+  </div>
+          </div>
+        </div></div>
+      </section>
+
+      <button id="scrollToTopBtn"></button>
+      <section class="feature-row" id="feature">
+        <div class="fade-in">
+        <div class="container">
+    
+          <h1>FEATURES</h1>
+        
+          <div class="feature-inner-row">
+            <div class="container reveal">
+            <div class="feature-left-side">
+              <div class="image-container">
+               <img src="images/about.jpg" alt="Image 7">
+              </div>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+             </div>
+             <div class="feature-right-side">
+              <div class="image-container">
+               <img src="images/about.jpg" alt="Image 8">
+              </div>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+             </div>
+         </div></div>
+         <div class="feature-inner-row">
+          <div class="container reveal">
+          <div class="feature-left-side">
+            <div class="image-container">
+             <img src="images/about.jpg" alt="Image 7">
+            </div>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+           </div>
+           <div class="feature-right-side">
+            <div class="image-container">
+             <img src="images/about.jpg" alt="Image 8">
+            </div>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+           </div>
+       </div></div>
+
+         <div class="feature-inner-row">
+          <div class="container reveal">
+          <div class="feature-left-side">
+            <div class="image-container">
+             <img src="images/about.jpg" alt="Image 7">
+            </div>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+           </div>
+           <div class="feature-right-side">
+            <div class="image-container">
+             <img src="images/about.jpg" alt="Image 8">
+            </div>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+           </div>
+       </div></div>
+
+    
+    
+    
+    
+        </div>
+        </div>
+      </section>
+  <section class="feature-row" id="about">
+    <div class="fade-in">
+    <div class="container">
+    
+      <h1>ABOUT US</h1>
+ 
+      <div class="container reveal">
+        <div class="feature-inner-row">
+           <div class="feature-left-side">
+            <div class="image-container">
+              <img src="images/boating.jpeg" alt="Image 1">
+            </div>
+            </div>
+            <div class="feature-right-side">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div></div>
+        
+        <div class="container reveal">
+          <div class="feature-inner-row">
+             <div class="feature-left-side">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+              
+              </div>
+              <div class="feature-right-side">
+                <div class="image-container">
+                  <img src="images/fishing.jpg" alt="Image 1">
+                </div>
+              </div>
+          </div></div>
+          <div class="container reveal">
+            <div class="feature-inner-row">
+               <div class="feature-left-side">
+                <div class="image-container">
+                  <img src="images/party.jpg" alt="Image 1">
+                </div>
+                </div>
+                <div class="feature-right-side">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div></div>
+              
+
+
+    </div>
+    </div>
+  </section>
+  <section class="footer-section" id="contact">
+    <div class="container" id="footer-container">
+  
+          <h3>Building The Business of Tomorrow.</h3>
+  
+          <br><br>
+     
+  
+      <div class="col-md-12">
+  <span>CONTACT US</span>
+  <br><br>
+  <div class="col-md-12">
+  
+  
+    <div class="col-md-6">
+      <div class="col-md-6">
+        <i class="fas fa-mobile-alt"></i>
+      <a href=" tel:+6597984949"> +65 9798 4949 </a>|
+      
+      <a href=" tel:+6589767494"> +65 8976 7494</a>
+  
+      </div>
+      <div class="col-md-6">
+        
+  
+  
+      </div>
+  
+    </div>
+  
+    <div class="col-md-6">
+     
+    </div>
+  </div>
+  <div class="ltd-container">
+ 
+  
+  </div>
+      </div>
+      <i class="fa fa-envelope" style="font-size:17px"></i>
+
+    <a  class="mail"href="mailto:hello@readygreatsite.com">hello@readygreatsite.com</a> 
+     </div></section>
+     <section class="footer-section two">
+      <div class="footer-container">
+      
+        <div class="col-md-12">
+          <div class="col-md-6 copyrights">
+         <p class="copyright" title="Subraa">Copyrights© 2023.<a href="https://subraa.info/ysites//subraa/index.html" > Subraa</a>. All Rights Reserved</p>
+     
+          </div>
+          <div class="col-md-6 designed-by" id="subraa-ltd">
+            <p title="Web Design Singapore">Designed &amp; Developed by<a href="https://www.subraa.com/" target="_blank"> Subraa</a></p>
+  
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+      <script>
+        window.addEventListener('scroll', function() {
+          var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+          if (window.scrollY > 500) {
+            scrollToTopBtn.classList.add('show');
+          } else {
+            scrollToTopBtn.classList.remove('show');
+          }
+        });
+        
+        document.getElementById('scrollToTopBtn').addEventListener('click', function() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+        
+        
+
+        const navList = document.querySelector('.navbar ul');
+        const navLinks = document.querySelectorAll('.navbar a');
+        const hamburger = document.querySelector('.navbar__toggler');
+        
+        hamburger.addEventListener("click", navbarTogglerClick);
+        
+        function navbarTogglerClick() {
+            hamburger.classList.toggle("open-navbar__toggler");
+            navList.classList.toggle("open");
+        }
+        
+        navLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
+        
+        function navbarLinkClick() {
+            if (navList.classList.contains("open")) {
+                hamburger.click();
+            }
+        }
+      
+
+        window.onscroll = function() {myFunction()};
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+
+
+
+      </script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+    integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+ </html>
